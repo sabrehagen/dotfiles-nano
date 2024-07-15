@@ -21,6 +21,7 @@ color brightblue "<[^= 	]*>" ""(\\.|[^"])*""
 ## Comment highlighting
 color red "^\s*//.*"
 color red start="^\s*/\*" end="\*/"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing whitespace
 color ,green "[[:space:]]+$"

@@ -23,6 +23,7 @@ color yellow start="\"\"\"" end="\"\"\""
 
 # Comments
 color brightblue "#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Keyless value
 color ,red "^[[:space:]]*=.*"

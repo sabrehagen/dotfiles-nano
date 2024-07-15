@@ -18,7 +18,7 @@
 # a starting point. I based verilog.nanorc off of c.nanorc and
 # python.nanorc.
 
-syntax "verilog" "\.(v|vh|sv|svh)$"
+syntax "verilog" "\.(v|vh|vlg|verilog|sv|svh)$"
 
 # I don't think we want this.
 #color brightred "\<[A-Z_][0-9A-Z_]+\>"

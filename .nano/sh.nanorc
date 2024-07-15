@@ -1,6 +1,6 @@
 ## Here is an example for Bourne shell scripts.
 ##
-syntax "SH" "\.sh$" "\.ash" "\.bashrc" "bashrc" "\.bash_aliases" "bash_aliases" "\.bash_functions" "bash_functions" "\.bash_login" "\.bash_logout" "\.bash_profile" "bash_profile" "\.profile" "revise\..+$"
+syntax "SH" "\.sh$" "\.ash$" "\.bashrc$" "bashrc$" "\.bash_aliases$" "bash_aliases$" "\.bash_functions$" "bash_functions$" "\.bash_login$" "\.bash_logout$" "\.bash_profile$" "bash_profile$" "\.profile$" "revise\..+$"
 header "^#!.*/(env +)?(ba|da|a)?sh( |$)"
 magic "(POSIX|Bourne-Again) shell script.*text"
 comment "#"
@@ -17,7 +17,8 @@ color brightblue "\<(alias|bg|bind|break|builtin|caller|cd|command|compgen|compl
 ## not buitins:
 ## cat|chmod|chown|cp|env|grep|install|ln|make|mkdir|mv|rm|sed|tar|touch
 icolor brightgreen "^\s+[0-9A-Z_]+\s+\(\)"
-icolor brightred "\$\{?[0-9A-Z_!@#$*?-]+\}?"
+icolor brightred "\$\{?[0-9A-Z_!@#%$*?-]+\}?"
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 color cyan "(^|[[:space:]])#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color ,green "[[:space:]]+$"

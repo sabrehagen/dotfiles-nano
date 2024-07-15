@@ -23,5 +23,6 @@ color yellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 icolor brightred "\$\{?[0-9A-Z_!@#$*?-]+\}?"
 ## Comments
 color magenta "(^|;)[[:space:]]*#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 ## Trailing whitespace
 color ,green "[[:space:]]+$"

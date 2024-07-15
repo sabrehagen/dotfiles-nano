@@ -28,6 +28,7 @@ color brightyellow "'([^\']|\\.)'"
 ## Comments
 color green "--.*"
 color green start="\{-" end="-\}"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 color brightred "undefined"
 

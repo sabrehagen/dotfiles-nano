@@ -29,6 +29,7 @@ icolor green "\(" "\)" "\," "\="
 color blue "\s+(//.*)"
 color blue start="^\s*/\*" end="\*/"
 color white "^\s*(\-)"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color ,green "[[:space:]]+$"
 # Unbuffered comments
 color brightblue "\s+(//-.*)"

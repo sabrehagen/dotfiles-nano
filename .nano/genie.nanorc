@@ -46,6 +46,9 @@ color yellow "(^|[[:space:]])//.*"
 # Block comment.
 color yellow start="^\s*/\*" end="\*/"
 
+# Reminders
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
+
 # Trailing whitespace.
 color ,green "[[:space:]]+$"
 

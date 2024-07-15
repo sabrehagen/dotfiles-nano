@@ -1,6 +1,6 @@
 ## Here is an example for Ruby.
 ##
-syntax "Ruby" "\.rb$" "Gemfile" "config.ru" "Rakefile" "Capfile" "Vagrantfile"
+syntax "Ruby" "\.rb$" "Gemfile$" "config.ru$" "Rakefile$" "Capfile$" "Vagrantfile$"
 header "^#!.*/(env +)?ruby( |$)"
 magic "Ruby script"
 linter ruby -w -c
@@ -32,6 +32,6 @@ color brightcyan "##[^{].*$" "##$"
 ## "Here" docs
 color green start="<<-?'?EOT'?" end="^EOT"
 ## Some common markers
-color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
+color ,cyan "(XXX|TODO|FIXME|\?\?\?)"
 ## Trailing spaces
 color ,green "[[:space:]]+$"

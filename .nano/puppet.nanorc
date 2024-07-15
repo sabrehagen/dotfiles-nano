@@ -32,7 +32,7 @@ color green "'([^']|(\\'))*'" "%[qw]\{[^}]*\}" "%[qw]\([^)]*\)" "%[qw]<[^>]*>" "
 color cyan "#[^{].*$" "#$"
 color brightcyan "##[^{].*$" "##$"
 ## Some common markers
-color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
+color ,cyan "(XXX|TODO|FIXME|\?\?\?)"
 ## Trailing spaces
 color ,green "[[:space:]]+$"
 

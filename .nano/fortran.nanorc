@@ -48,6 +48,7 @@ icolor cyan "<[^=     ]*>" "'(\\.|[^"])*'"
 
 ## Comment highlighting
 icolor brightred "!.*$" "(^[Cc]| [Cc]) .*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"

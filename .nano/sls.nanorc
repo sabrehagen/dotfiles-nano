@@ -21,6 +21,7 @@ color yellow "\<(grain|grains|compound|pcre|grain_pcre|list|pillar)\>"
 
 # Comments
 color brightblack "^#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Logic keywords
 color magenta "\<(if|elif|else|or|not|and|endif|end)\>"

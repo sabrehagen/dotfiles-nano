@@ -29,22 +29,25 @@ color brightmagenta "~[a-z]\/([^\/])*\/[a-z]*" "~[a-z]\|([^\|])*\|[a-z]*" "~[a-z
 ## Strings, double-quoted
 color green ""([^"]|(\\"))*""
 
-## Expression substitution.  These go inside double-quoted strings,
-## "like #{this}".
-color brightgreen "#\{[^}]*\}"
-
 ## Strings, single-quoted
 color green "'([^']|(\\'))*'"
 
+## Expression substitution.  These go inside double-quoted strings,
+## "like #{this}".
+color normal "#\{[^}]*\}"
+
 ## Comments
-color cyan "#.*$" "#$"
-color brightcyan "##.*$" "##$"
+color cyan "(^|[[:space:]])#([^{].*|)$"
+color brightcyan "(^|[[:space:]])##.*$"
 
 ## "Here" docs
 color green start="\"\"\"" end="\"\"\""
 
 ## Some common markers
-color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
+color ,cyan "(XXX|TODO|FIXME|\?\?\?)"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"
+
+## Pipe Operator
+color brightmagenta "\|>" "\|"

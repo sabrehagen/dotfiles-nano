@@ -7,7 +7,7 @@
 #	Spec Drafts	{ IETF Sieve Regex,Martin Sieve Notify
 #				  Melnikov Sieve IMAPFlags			   }
 
-syntax Sieve "\.(siv|sieve)$"
+syntax "Sieve" "\.(siv|sieve)$"
 
 #-----------------------------#
 
@@ -178,6 +178,7 @@ icolor brightmagenta "\<[0-9]+[KMG]?\>"
 
 ##comment
 color blue "\#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 #-----------------------------#
 

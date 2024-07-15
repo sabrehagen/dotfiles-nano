@@ -52,3 +52,4 @@ color brightyellow start="\"" end="\""
 color brightyellow start="\'" end="\'"
 #comment
 color blue "--.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

@@ -4,7 +4,7 @@
 # Original author:  John Boero
 # License:  GPLv3 or newer
 
-syntax "hcl" "\.(tf|hcl)$"
+syntax "hcl" "\.(tf|nomad|hcl)$"
 # No comments are permitted in JSON.
 comment ""
 
@@ -17,9 +17,9 @@ color green ":[[:space:]]*\"#[0-9abcdefABCDEF]+\""
 # Escapes.
 color green "\\\\" "\\\"" "\\[bfnrt]" "\\u[0-9abcdefABCDEF]{4})"
 # Special words.
-color green "(true|false|null|output|path|vault|description|default|value)"
+color green "\<(true|false|null|output|path|vault|description|default|value)\>"
 
-color brightgreen "(variable|terraform|resource|provider|module)"
+color brightgreen "\<(variable|terraform|resource|provider|module)\>"
 
 # Names (very unlikely to contain a quote).
 color brightblue "\"[^"]+\"[[:space:]]*:"
@@ -31,6 +31,7 @@ color brightred "," ":"
 
 # Comments.
 color cyan "(^|[[:space:]]+)(//|#).*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Trailing whitespace.
 color ,green "[[:space:]]+$"

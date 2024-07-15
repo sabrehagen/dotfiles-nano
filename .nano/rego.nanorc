@@ -1,6 +1,6 @@
 # Syntax highlighting for Rego (https://www.openpolicyagent.org/)
 
-syntax "Rego" "\.rego"
+syntax "Rego" "\.rego$"
 comment "#"
 
 ## Reserved words
@@ -20,3 +20,4 @@ color green "`(\\.|[^\\`])*`"
 
 ## Comments
 color brightblack "^\s*#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

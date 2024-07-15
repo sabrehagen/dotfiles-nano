@@ -20,7 +20,7 @@ color green "'([^']|(\\'))*'" "%[qw]\{[^}]*\}" "%[qw]\([^)]*\)" "%[qw]<[^>]*>" "
 color cyan "#[^{].*$" "#$"
 color brightcyan "##[^{].*$" "##$"
 color green start="<<-?'?EOT'?" end="^EOT"
-color brightcyan "(XXX|TODO|FIXME|\?\?\?)"
+color ,cyan "(XXX|TODO|FIXME|\?\?\?)"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"

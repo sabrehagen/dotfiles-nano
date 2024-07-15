@@ -24,11 +24,12 @@ color brightred "!([[:alnum:]`~@#$%*(){}:',.?+=_-]|\[|\])([[:alnum:]`~@#$%*(){}:
 # Parameter names for arguments and loop.
 color brightred "%(~[[:alpha:]$]*)?[0-9*]\>" "%%(~[[:alpha:]$]*)?[[:alpha:]]\>"
 
-# Comments.
-icolor cyan "^[[:space:]]*(\<rem\>|::).*"
-
 # Strings.
 icolor brightyellow ""(\^.|[^"])*""
+
+# Comments.
+icolor cyan "^[[:space:]]*(\<rem\>|::).*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 # Trailling whitespace
 color ,green "[[:space:]]+$"

@@ -1,6 +1,6 @@
 ## Here is a prolog example.
 
-syntax "prolog" "\.pl"
+syntax "prolog" "\.pl$" "\.pro$"
 comment "%"
 
 # Reset everything

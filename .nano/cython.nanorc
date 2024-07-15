@@ -28,6 +28,7 @@ color cyan start=""""[^"]" end=""""" start="'''[^']" end="'''"
 
 # Comment Color
 color brightblue "#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"

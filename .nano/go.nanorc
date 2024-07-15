@@ -1,5 +1,6 @@
 syntax "GO" "\.go$"
 comment "//"
+tabgives "	"
 
 color brightblue "[A-Za-z_][A-Za-z0-9_]*[[:space:]]*[()]"
 color brightblue "\<(append|cap|close|complex|copy|delete|imag|len)\>"

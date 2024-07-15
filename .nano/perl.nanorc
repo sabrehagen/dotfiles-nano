@@ -12,6 +12,7 @@ color yellow ""[^"]*"|'[^']*'|qq\|.*\|"
 color white "[sm]/.*/"
 color white start="(^use| = new)" end=";"
 color green "#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color yellow start="<< 'STOP'" end="STOP"
 
 ## Trailing spaces

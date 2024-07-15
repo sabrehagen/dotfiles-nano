@@ -13,6 +13,7 @@ color brightgreen  "#\{[^}]*\}"
 color brightblue "(@|@@)[0-9A-Z_a-z]+"
 ## Comments
 color brightcyan "#[^{].*$" "#$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 
 ## Trailing spaces
 color ,green "[[:space:]]+$"

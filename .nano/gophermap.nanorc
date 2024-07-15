@@ -43,3 +43,4 @@ color brightgreen "^(!|-|:|~|%|=|\*|\.).*"
 
 # Comments
 color white,blue "#.*"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

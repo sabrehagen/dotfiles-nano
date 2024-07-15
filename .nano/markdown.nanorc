@@ -1,4 +1,4 @@
-syntax "Markdown" "\.(md|mkd|mkdn|markdown)$"
+syntax "Markdown" "\.(md|mkd|mkdn|markdown|mdx|mdown)$"
 
 # Tables (Github extension)
 color cyan ".*[ :]\|[ :].*"
@@ -20,10 +20,10 @@ color red "(^|[[:space:]])~~[^ ][^~]*~~"
 color brightmagenta "^(---+|===+|___+|\*\*\*+)\s*$"
 
 # headlines
-color brightmagenta  "^#{1,6}.*"
+color brightwhite "^#{1,6} .*"
 
 # lists
-color blue   "^[[:space:]]*[\*+-] |^[[:space:]]*[0-9]+\. "
+color brightblue   "^[[:space:]]*[\*+-] |^[[:space:]]*[0-9]+\. "
 
 # leading whitespace
 color black    "^[[:space:]]+"

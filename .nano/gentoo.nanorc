@@ -26,6 +26,7 @@ color brightblue "\<(doc|ins|exe)into\>" "\<f(owners|perms)\>" "\<(exe|ins|dir)o
 color blue "\<make\>" "\<(cat|cd|chmod|chown|cp|echo|env|export|grep|let|ln|mkdir|mv|rm|sed|set|tar|touch|unset)\>"
 ## Highlight comments (doesnt work that well)
 color yellow "#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 ## Highlight strings (doesnt work that well)
 color brightyellow ""(\\.|[^\"])*"" "'(\\.|[^'])*'"
 ## Trailing space is bad!
@@ -50,3 +51,4 @@ color cyan "^[[:space:]]*.*/"
 color brightmagenta "^[[:space:]]*(=|~|<|<=|=<|>|>=|=>)"
 ## Comments:
 color yellow "#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"

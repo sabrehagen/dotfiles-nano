@@ -2,9 +2,10 @@
 ## 
 ## Derived from sh.nanorc
 ##
-syntax "dotenv" "\.env" "\.env\..+"
+syntax "dotenv" "\.env$" "^\.env\..+$"
 
 color green "(\(|\)|\$|=)"
 color brightyellow ""(\\.|[^"])*"" "'(\\.|[^'])*'"
 color cyan "(^|[[:space:]])#.*$"
+color brightwhite,yellow "\<(FIXME|TODO|XXX)\>"
 color ,green "[[:space:]]+$"
