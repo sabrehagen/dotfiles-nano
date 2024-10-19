@@ -4,4 +4,17 @@ set keycolor black,blue
 set functioncolor white,black
 set numbercolor white,black
 
+# Emacs-like key bindings
+bind ^A home main
+bind ^E end main
+bind ^J enter main
+bind ^W chopwordleft main
+bind ^/ whereis main
+bind M-d chopwordright main
+bind M-< firstline main
+bind M-> lastline main
+bind M-] complete main
+bind M-b prevword main
+bind M-f nextword main
+
 include ~/.nano/*.nanorc
